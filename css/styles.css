@@ -1,0 +1,70 @@
+:root {
+  --clr-primary: hsl(5, 85%, 63%);
+  --clr-accent: hsl(35, 77%, 62%);
+  --clr-primary-shade: #1b4133;
+  --clr-white: hsl(0, 100%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-grey-1: #fafafa;
+  --clr-grey-2: #efefef;
+  --clr-grey-3: #d8d8d8;
+  --clr-grey-4: #a0a0a0;
+  --clr-grey-5: #444444;
+  --ff-main: "League Spartan";
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fs-1: 3rem;
+  --fs-2: 2.5rem;
+  --fs-3: 1rem;
+  --fs-4: 0.9375rem;
+  --sp-0: 0px;
+  --sp-1: 1rem;
+  --sp-2: 1.5rem;
+  --sp-3: 2rem;
+  --sp-4: 3rem;
+  --sp-5: 3.5rem;
+  --sp-6: 4rem;
+  --ls-1: -2px;
+  --ls-2: 7px;
+  --ls-3: -0.7px;
+  --ls-4: -0.5px;
+  --ls-5: 12.5px;
+  --lh-1: 0.9;
+  --lh-2: 1;
+  --lh-3: 1.4;
+  --desktop-container-width: 37.5rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+td,
+th,
+button {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: var(--ff-main), sans-serif;
+  font-size: var(--fs-4);
+  font-weight: var(--fw-normal);
+  line-height: 1.5;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,52 @@
+@use "./utils" as *;
+
+:root {
+  --clr-primary: hsl(5, 85%, 63%);
+  --clr-accent: hsl(35, 77%, 62%);
+
+  --clr-primary-shade: #1b4133;
+
+  --clr-white: hsl(0, 100%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+
+  --clr-grey-1: #fafafa;
+  --clr-grey-2: #efefef;
+  --clr-grey-3: #d8d8d8;
+  --clr-grey-4: #a0a0a0;
+  --clr-grey-5: #444444;
+
+  --ff-main: "League Spartan";
+
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  // FONT SIZE
+  --fs-1: #{toRem(48px)};
+  --fs-2: #{toRem(40px)};
+  --fs-3: #{toRem(16px)};
+  --fs-4: #{toRem(15px)};
+
+  // SPACING
+  --sp-0: 0px;
+  --sp-1: #{toRem(16px)};
+  --sp-2: #{toRem(24px)};
+  --sp-3: #{toRem(32px)};
+  --sp-4: #{toRem(48px)};
+  --sp-5: #{toRem(56px)};
+  --sp-6: #{toRem(64px)};
+
+  // LETTER SPACING
+  --ls-1: -2px;
+  --ls-2: 7px;
+  --ls-3: -0.7px;
+  --ls-4: -0.5px;
+  --ls-5: 12.5px;
+
+  // LINE HEIGHT
+  --lh-1: 0.9;
+  --lh-2: 1;
+  --lh-3: 1.4;
+
+  --desktop-container-width: #{toRem(600px)};
+}
