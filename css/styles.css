@@ -63,8 +63,29 @@ img {
 body {
   font-family: var(--ff-main), sans-serif;
   font-size: var(--fs-4);
-  font-weight: var(--fw-normal);
-  line-height: 1.5;
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-2);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.flow-content > * + * {
+  margin-top: var(--flow-spacer, var(--sp-3));
+}
+
+.split {
+  display: flex;
+}
+
+.split > * {
+  width: 100%;
+}
+
+.container {
+  max-width: var(--desktop-container-width);
+  margin-inline: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
