@@ -65,6 +65,7 @@ body {
   font-size: var(--fs-4);
   font-weight: var(--fw-medium);
   line-height: var(--lh-2);
+  background-color: black;
 }
 
 .no-scroll {
