@@ -21,11 +21,14 @@
 
     <link rel="stylesheet" href="./css/styles.css" />
 
+    <script src="./js/main.js" type="module"></script>
+
     <title>Frontend Mentor | Room homepage</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav data-open="false">
+        <div class="overlay"></div>
         <button class="btn btn--mobile-nav">
           <img
             class="icon icon--hamburger"
@@ -39,7 +42,7 @@
           />
         </button>
         <img src="./images/logo.svg" alt="Logo image" />
-        <ul class="links links--desktop">
+        <ul class="links tp-4">
           <li>
             <a class="link" href="#">home</a>
           </li>

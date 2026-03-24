@@ -1,5 +1,8 @@
 @use "./utils" as *;
 
+$bp-desktop: #{toRem(1000px)};
+$bp-tablet: #{toRem(500px)};
+
 :root {
   --clr-primary: hsl(5, 85%, 63%);
   --clr-accent: hsl(35, 77%, 62%);
@@ -47,6 +50,10 @@
   --lh-1: 0.9;
   --lh-2: 1;
   --lh-3: 1.4;
+
+  // Z INDEX
+  --z-index-nav-menu-btn: 200;
+  --z-index-nav-links-mobile: 100;
 
   --desktop-container-width: #{toRem(600px)};
 }
