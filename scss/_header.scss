@@ -58,7 +58,6 @@ nav > img {
   height: 110px;
 
   transform: translateY(-100%);
-  transition: transform 0.2s ease-in;
   @media (prefers-reduced-motion: reduce) {
     transition: none;
   }
@@ -119,11 +118,7 @@ nav > img {
 
   .links {
     transform: translateY(0);
-    transition: transform 0.2s ease-in;
-
-    @media (prefers-reduced-motion: reduce) {
-      transition: none;
-    }
+    transition: transform 0.3s ease-out;
   }
 
   .overlay {
@@ -142,6 +137,9 @@ nav > img {
 
   .overlay {
     display: none;
+  }
+  .links {
+    transition: transform 0.3s ease-in;
   }
 }
 

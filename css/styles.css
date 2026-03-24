@@ -187,7 +187,6 @@ nav > img {
   top: 0;
   height: 110px;
   transform: translateY(-100%);
-  transition: transform 0.2s ease-in;
   padding-inline-end: var(--sp-3);
 }
 @media (prefers-reduced-motion: reduce) {
@@ -246,12 +245,7 @@ nav > img {
 }
 [data-open=true] .links {
   transform: translateY(0);
-  transition: transform 0.2s ease-in;
-}
-@media (prefers-reduced-motion: reduce) {
-  [data-open=true] .links {
-    transition: none;
-  }
+  transition: transform 0.3s ease-out;
 }
 [data-open=true] .overlay {
   position: fixed;
@@ -265,6 +259,9 @@ nav > img {
 }
 [data-open=false] .overlay {
   display: none;
+}
+[data-open=false] .links {
+  transition: transform 0.3s ease-in;
 }
 
 .btn {
