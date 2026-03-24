@@ -190,6 +190,11 @@ nav > img {
   transition: transform 0.2s ease-in;
   padding-inline-end: var(--sp-3);
 }
+@media (prefers-reduced-motion: reduce) {
+  .links {
+    transition: none;
+  }
+}
 .links > :first-child {
   margin-left: auto;
 }
@@ -242,6 +247,11 @@ nav > img {
 [data-open=true] .links {
   transform: translateY(0);
   transition: transform 0.2s ease-in;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-open=true] .links {
+    transition: none;
+  }
 }
 [data-open=true] .overlay {
   position: fixed;
