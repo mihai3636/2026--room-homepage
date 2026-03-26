@@ -1,0 +1,31 @@
+@use "utils" as *;
+@use "variables" as *;
+
+.info {
+  padding-block: var(--sp-6);
+  --flow-spacer: var(--sp-1);
+}
+
+.info__description {
+  color: var(--clr-grey-4);
+}
+
+.info__link {
+  --flow-spacer: var(--sp-3);
+  display: flex;
+  justify-content: space-between;
+
+  text-transform: uppercase;
+  color: var(--clr-black);
+
+  @media (min-width: $bp-tablet) {
+    --flow-spacer: var(--sp-2);
+
+    justify-content: start;
+    gap: var(--sp-2);
+  }
+
+  @media (min-width: $bp-desktop) {
+    gap: var(--sp-3);
+  }
+}

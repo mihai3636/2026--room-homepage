@@ -1,10 +1,6 @@
 @use "utils" as *;
 @use "variables" as *;
 
-body {
-  background-color: red;
-}
-
 .carousel {
   position: relative;
   overflow: hidden;
@@ -37,6 +33,10 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.carousel__nav--desktop {
+  display: none;
 }
 
 .carousel__btn {
