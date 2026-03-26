@@ -34,6 +34,7 @@ nav > img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  z-index: var(--z-index-nav-links-mobile);
 
   @media (min-width: $bp-desktop) {
     position: static;

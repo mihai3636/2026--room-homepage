@@ -61,9 +61,9 @@
     <main>
       <section>
         <div class="carousel">
-          <picture>
+          <picture class="carousel__picture" data-index="0">
             <source
-              media="(min-width: 1200px)"
+              media="(min-width: 500px)"
               srcset="./images/desktop-image-hero-1.jpg"
             />
             <img
@@ -72,9 +72,9 @@
               alt="Chairs at table"
             />
           </picture>
-          <picture>
+          <picture class="carousel__picture" data-index="1">
             <source
-              media="(min-width: 1200px)"
+              media="(min-width: 500px)"
               srcset="./images/desktop-image-hero-2.jpg"
             />
             <img
@@ -83,9 +83,9 @@
               alt="Chairs at table"
             />
           </picture>
-          <picture>
+          <picture class="carousel__picture" data-index="2">
             <source
-              media="(min-width: 1200px)"
+              media="(min-width: 500px)"
               srcset="./images/desktop-image-hero-3.jpg"
             />
             <img
@@ -95,10 +95,10 @@
             />
           </picture>
           <div class="carousel__nav carousel__nav--mobile">
-            <button>
+            <button id="carouselBtnPrevMobile" class="carousel__btn btn">
               <img src="./images/icon-angle-left.svg" alt="Icon angle left" />
             </button>
-            <button>
+            <button id="carouselBtnNextMobile" class="carousel__btn btn">
               <img src="./images/icon-angle-right.svg" alt="Icon angle left" />
             </button>
           </div>

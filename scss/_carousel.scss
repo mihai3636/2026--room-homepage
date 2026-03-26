@@ -1,0 +1,57 @@
+@use "utils" as *;
+@use "variables" as *;
+
+body {
+  background-color: red;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel__picture {
+  flex: 0 0 100%;
+}
+
+.carousel__img {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  object-position: bottom;
+
+  @media (min-width: $bp-tablet) {
+    max-height: 400px;
+  }
+}
+
+.carousel__nav {
+  display: flex;
+}
+
+.carousel__nav--mobile {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.carousel__btn {
+  background-color: var(--clr-black);
+  width: #{toRem(56px)};
+  aspect-ratio: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > img {
+    width: 8.4px;
+    height: 16.8px;
+
+    @media (min-width: $bp-tablet) {
+      width: 12px;
+      height: 24px;
+    }
+  }
+}
