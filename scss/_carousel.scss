@@ -6,13 +6,15 @@ body {
 }
 
 .carousel {
-  display: flex;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 .carousel__picture {
-  flex: 0 0 100%;
+  &:nth-child(n + 2) {
+    position: absolute;
+    inset: 0;
+  }
 }
 
 .carousel__img {
@@ -20,6 +22,7 @@ body {
   max-height: 360px;
   object-fit: cover;
   object-position: bottom;
+  transition: transform 0.3s ease-out;
 
   @media (min-width: $bp-tablet) {
     max-height: 400px;

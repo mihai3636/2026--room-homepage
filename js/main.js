@@ -6,15 +6,42 @@ const navEl = document.querySelector("nav");
 const btnPrevMobile = document.getElementById("carouselBtnPrevMobile");
 const btnNextMobile = document.getElementById("carouselBtnNextMobile");
 
+const pictureEls = [
+  ...document.querySelectorAll(".carousel__picture > .carousel__img"),
+];
+
+let currentIndex = 0;
+
 btnNavEl.addEventListener("click", () => {
   navEl.dataset.open = navEl.dataset.open === "true" ? "false" : true;
   document.body.classList.toggle("no-scroll");
 });
 
 btnPrevMobile.addEventListener("click", () => {
-  console.log("Prev clicked");
+  if (currentIndex === 0) return;
+
+  currentIndex--;
+  console.log(`Current index: ${currentIndex}`);
+  renderCarousel();
 });
 
 btnNextMobile.addEventListener("click", () => {
-  console.log("Next clicked");
+  if (currentIndex === 2) return;
+
+  currentIndex++;
+
+  console.log(`Current index: ${currentIndex}`);
+  renderCarousel();
 });
+
+function renderCarousel() {
+  pictureEls.forEach((pic, index) => {
+    const offset = (index - currentIndex) * 100;
+    const translateValue = `translateX(${offset}%)`;
+    pic.style.transform = translateValue;
+
+    console.log(translateValue);
+  });
+}
+
+renderCarousel();
