@@ -107,6 +107,7 @@ nav > img {
 }
 
 .overlay {
+  z-index: var(--z-index-overlay);
   @media (min-width: $bp-desktop) {
     display: none;
   }

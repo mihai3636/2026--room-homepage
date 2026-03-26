@@ -52,8 +52,10 @@ $bp-tablet: #{toRem(500px)};
   --lh-3: 1.4;
 
   // Z INDEX
-  --z-index-nav-menu-btn: 200;
-  --z-index-nav-links-mobile: 100;
+  --z-index-nav-menu-btn: 3000;
+  --z-index-nav-links-mobile: 2000;
+
+  --z-index-overlay: 1000;
 
   --desktop-container-width: #{toRem(600px)};
 }

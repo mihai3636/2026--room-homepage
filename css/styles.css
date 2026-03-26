@@ -32,8 +32,9 @@
   --lh-1: 0.9;
   --lh-2: 1;
   --lh-3: 1.4;
-  --z-index-nav-menu-btn: 200;
-  --z-index-nav-links-mobile: 100;
+  --z-index-nav-menu-btn: 3000;
+  --z-index-nav-links-mobile: 2000;
+  --z-index-overlay: 1000;
   --desktop-container-width: 37.5rem;
 }
 
@@ -235,6 +236,9 @@ nav > img {
   }
 }
 
+.overlay {
+  z-index: var(--z-index-overlay);
+}
 @media (min-width: 62.5rem) {
   .overlay {
     display: none;
