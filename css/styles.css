@@ -151,6 +151,10 @@ body {
   padding-block: var(--sp-6);
 }
 
+.hidden {
+  opacity: 0 !important;
+}
+
 a {
   text-decoration: none;
 }
@@ -354,6 +358,19 @@ nav > img {
 
 .info {
   --flow-spacer: var(--sp-1);
+}
+
+.info__stack {
+  position: relative;
+}
+.info__stack > .info__content:nth-child(n+2) {
+  position: absolute;
+  inset: 0;
+}
+
+.info__content {
+  opacity: 1;
+  transition: opacity 0.1s ease-out;
 }
 
 .info__description {

@@ -39,6 +39,10 @@ body {
   padding-block: var(--sp-6);
 }
 
+.hidden {
+  opacity: 0 !important;
+}
+
 a {
   text-decoration: none;
 }

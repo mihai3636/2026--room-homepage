@@ -10,6 +10,8 @@ const pictureEls = [
   ...document.querySelectorAll(".carousel__picture > .carousel__img"),
 ];
 
+const infoContentEls = [...document.querySelectorAll(".info__content")];
+
 let currentIndex = 0;
 
 btnNavEl.addEventListener("click", () => {
@@ -42,6 +44,16 @@ function renderCarousel() {
 
     console.log(translateValue);
   });
+
+  renderInfoContent();
+}
+
+function renderInfoContent() {
+  infoContentEls.forEach((infoContentEl) => {
+    infoContentEl.classList.add("hidden");
+  });
+
+  infoContentEls[currentIndex].classList.remove("hidden");
 }
 
 renderCarousel();
