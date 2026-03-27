@@ -35,6 +35,10 @@ body {
   }
 }
 
+.vertical-space {
+  padding-block: var(--sp-6);
+}
+
 a {
   text-decoration: none;
 }

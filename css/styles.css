@@ -147,6 +147,10 @@ body {
   }
 }
 
+.vertical-space {
+  padding-block: var(--sp-6);
+}
+
 a {
   text-decoration: none;
 }
@@ -349,7 +353,6 @@ nav > img {
 }
 
 .info {
-  padding-block: var(--sp-6);
   --flow-spacer: var(--sp-1);
 }
 
@@ -375,6 +378,24 @@ nav > img {
   .info__link {
     gap: var(--sp-3);
   }
+}
+
+.about {
+  --flow-spacer: var(--sp-1);
+}
+
+.img-about {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.about__title {
+  text-transform: uppercase;
+}
+
+.about__description {
+  color: var(--clr-grey-4);
 }
 
 /*# sourceMappingURL=styles.css.map */

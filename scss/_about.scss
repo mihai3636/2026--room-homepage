@@ -1,0 +1,21 @@
+@use "utils" as *;
+@use "variables" as *;
+
+.about {
+  --flow-spacer: var(--sp-1);
+}
+
+.img-about {
+  width: 100%;
+  max-height: 300px;
+
+  object-fit: cover;
+}
+
+.about__title {
+  text-transform: uppercase;
+}
+
+.about__description {
+  color: var(--clr-grey-4);
+}
