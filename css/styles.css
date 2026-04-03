@@ -146,6 +146,11 @@ body {
     padding-inline: var(--sp-6);
   }
 }
+@media (min-width: 78.75rem) {
+  .container {
+    padding-inline: var(--padding-inline, var(--sp-6));
+  }
+}
 
 .vertical-space {
   padding-block: var(--sp-6);
@@ -418,6 +423,13 @@ nav > img {
 .info {
   --flow-spacer: var(--sp-1);
 }
+@media (min-width: 78.75rem) {
+  .info {
+    display: flex;
+    align-items: center;
+    --padding-inline: 6.25rem;
+  }
+}
 
 .info__stack {
   position: relative;
@@ -459,9 +471,17 @@ nav > img {
 .about {
   --flow-spacer: var(--sp-1);
 }
+@media (min-width: 78.75rem) {
+  .about {
+    --padding-inline: var(--sp-4);
+    display: flex;
+    align-items: center;
+  }
+}
 
 .img-about {
   width: 100%;
+  height: 100%;
   max-height: 300px;
   object-fit: cover;
 }

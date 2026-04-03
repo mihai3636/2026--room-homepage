@@ -33,6 +33,10 @@ body {
   @media (min-width: $bp-tablet) {
     padding-inline: var(--sp-6);
   }
+
+  @media (min-width: $bp-desktop) {
+    padding-inline: var(--padding-inline, var(--sp-6));
+  }
 }
 
 .vertical-space {

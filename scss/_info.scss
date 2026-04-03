@@ -3,6 +3,12 @@
 
 .info {
   --flow-spacer: var(--sp-1);
+
+  @media (min-width: $bp-desktop) {
+    display: flex;
+    align-items: center;
+    --padding-inline: #{toRem(100px)};
+  }
 }
 
 .info__stack {
