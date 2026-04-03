@@ -6,6 +6,9 @@ const navEl = document.querySelector("nav");
 const btnPrevMobile = document.getElementById("carouselBtnPrevMobile");
 const btnNextMobile = document.getElementById("carouselBtnNextMobile");
 
+const btnPrevDesktop = document.getElementById("carouselBtnPrevDesktop");
+const btnNextDesktop = document.getElementById("carouselBtnNextDesktop");
+
 const pictureEls = [
   ...document.querySelectorAll(".carousel__picture > .carousel__img"),
 ];
@@ -19,22 +22,28 @@ btnNavEl.addEventListener("click", () => {
   document.body.classList.toggle("no-scroll");
 });
 
-btnPrevMobile.addEventListener("click", () => {
+btnPrevMobile.addEventListener("click", handlePrevClicked);
+btnNextMobile.addEventListener("click", handleNextClicked);
+
+btnPrevDesktop.addEventListener("click", handlePrevClicked);
+btnNextDesktop.addEventListener("click", handleNextClicked);
+
+function handlePrevClicked() {
   if (currentIndex === 0) return;
 
   currentIndex--;
   console.log(`Current index: ${currentIndex}`);
   renderCarousel();
-});
+}
 
-btnNextMobile.addEventListener("click", () => {
+function handleNextClicked() {
   if (currentIndex === 2) return;
 
   currentIndex++;
 
   console.log(`Current index: ${currentIndex}`);
   renderCarousel();
-});
+}
 
 function renderCarousel() {
   pictureEls.forEach((pic, index) => {
