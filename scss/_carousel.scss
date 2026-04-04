@@ -34,7 +34,7 @@
 
   @media (min-width: $bp-desktop) {
     height: 100%;
-    max-height: 534px;
+    max-height: #{toRem(534px)};
   }
 }
 

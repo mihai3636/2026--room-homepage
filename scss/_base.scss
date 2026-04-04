@@ -6,6 +6,12 @@ body {
   font-size: var(--fs-4);
   font-weight: var(--fw-medium);
   line-height: var(--lh-2);
+
+  position: relative;
+  @media (min-width: #{toRem(2000px)}) {
+    max-width: #{toRem(1600px)};
+    margin-inline: auto;
+  }
 }
 
 .no-scroll {
@@ -53,8 +59,15 @@ a {
 
 main {
   @media (min-width: $bp-desktop) {
+    min-height: 100vh;
+
     display: grid;
     grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: auto 1fr;
+  }
+
+  @media (min-height: #{toRem(953px)}) {
+    grid-template-rows: max-content #{toRem(420px)};
   }
 
   & > *:first-child {

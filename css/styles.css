@@ -118,6 +118,13 @@ body {
   font-size: var(--fs-4);
   font-weight: var(--fw-medium);
   line-height: var(--lh-2);
+  position: relative;
+}
+@media (min-width: 125rem) {
+  body {
+    max-width: 100rem;
+    margin-inline: auto;
+  }
 }
 
 .no-scroll {
@@ -166,8 +173,15 @@ a {
 
 @media (min-width: 78.75rem) {
   main {
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: auto 1fr;
+  }
+}
+@media (min-height: 59.5625rem) {
+  main {
+    grid-template-rows: max-content 26.25rem;
   }
 }
 main > *:first-child {
@@ -369,7 +383,7 @@ nav > img {
 @media (min-width: 78.75rem) {
   .carousel__img {
     height: 100%;
-    max-height: 534px;
+    max-height: 33.375rem;
   }
 }
 
@@ -481,9 +495,14 @@ nav > img {
 
 .img-about {
   width: 100%;
-  height: 100%;
-  max-height: 300px;
+  max-height: 18.75rem;
   object-fit: cover;
+}
+@media (min-width: 78.75rem) {
+  .img-about {
+    height: 100%;
+    max-height: 56.25rem;
+  }
 }
 
 .about__title {
