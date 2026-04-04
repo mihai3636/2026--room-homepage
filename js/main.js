@@ -18,7 +18,7 @@ const infoContentEls = [...document.querySelectorAll(".info__content")];
 let currentIndex = 0;
 
 btnNavEl.addEventListener("click", () => {
-  navEl.dataset.open = navEl.dataset.open === "true" ? "false" : true;
+  navEl.dataset.open = navEl.dataset.open === "true" ? "false" : "true";
   document.body.classList.toggle("no-scroll");
 });
 
@@ -37,7 +37,7 @@ function handlePrevClicked() {
 }
 
 function handleNextClicked() {
-  if (currentIndex === 2) return;
+  if (currentIndex === pictureEls.length - 1) return;
 
   currentIndex++;
 
